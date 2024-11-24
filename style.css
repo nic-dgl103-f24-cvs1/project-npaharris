@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+/*-------- UTILITIES ---------*/
+
+.content-width {
+  width: 33.4rem;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .content-width {
+    width: 69rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .content-width {
+    width: 113rem;
+  }
+}
+
+/*-------- HEADER ---------*/
+
+header {
+    position: absolute;
+    width: 100%;
+}
+
+header .content-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: 100px;
+}
+
+.main-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-toggle {
+  display: none;
+}
+
+/*-------- HERO ---------*/
+
+.hero {
+    background: red;
+    padding:200px 0 150px 0;
+    text-align: center;
+}
+
+.hero .content-width {
+max-width: 45rem;
+}
