@@ -31,6 +31,15 @@ body {
   }
 }
 
+/*-------- VIDEO ---------*/
+
+video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 113rem;
+  }
+
 /*-------- HEADER ---------*/
 
 header {
@@ -159,3 +168,87 @@ max-width: 45rem;
     }
   }
 
+/*-------- TESTIMONIALS ---------*/
+
+.testimonials {
+    padding-bottom: 8rem;
+  }
+  
+  .testimonials-content {
+    text-align: center;
+    padding: 4rem 4rem;
+    font-size: 2.4rem;
+    color: #505d68;
+  }
+  
+  .testimonials-content p {
+    font-size: 16px;
+  }
+  
+  .testimonials-cards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .testimonials-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 334px;
+    max-width: 100%;
+    background-color: #f2f5f7;
+    padding: 24px;
+    margin-bottom: 2.4rem;
+  }
+  
+  .testimonial {
+    font-size: 18px;
+  }
+  
+  .testimonials-name {
+    margin-bottom: 0;
+    color: #505d68;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .testimonials-job {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .testimonials-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 2rem;
+      justify-content: center;
+    }
+  
+    .testimonials-card {
+      margin: 0;
+    }
+  
+    .testimonials-content {
+      text-align: left;
+      padding: 3rem 0;
+      max-width: 88%;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .testimonials .content-width {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+
+/*-------- LOCATION / CONTACT ---------*/
+
+
+
+
+  
