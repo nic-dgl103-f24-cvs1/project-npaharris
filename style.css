@@ -131,7 +131,7 @@ header .content-width {
 /*-------- OFFERINGS ---------*/
 
 .offerings {
-  background-color: rgb(56, 115, 74);
+  background-color: #4c6756;
 }
 
 .offerings-content {
@@ -324,3 +324,13 @@ text-align: center;
 } */
 
 /*-------- LOCATION / CONTACT ---------*/
+
+.location {
+    padding: 2.4rem;
+    background-color: #4c6756;
+}
+
+.location iframe {
+    width: 100%;
+    height: 40rem;
+}
