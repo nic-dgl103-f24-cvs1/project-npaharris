@@ -54,7 +54,7 @@ I am redesigning the Kehler Vegetable Company website to make it simple, user-fr
 
 # Featured Products
 
-- Product grid
+- Popular products
 - Quick view options
 - Pricing display
 

@@ -16,7 +16,7 @@ body {
 
 p {
   font-size: 1.6rem;
-  color: white;
+  color: rgb(236, 228, 174);
 }
 
 h1,
@@ -39,6 +39,37 @@ h2 {
 h3 {
   font-size: 2.4rem;
 }
+
+.button {
+    background-color: white;
+  border: none;
+  border-radius: 8px;
+  color: green;
+  padding: 16px 16px;
+  margin-top: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+  
+
+  /* https://www.cssmatic.com/box-shadow */
+
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.35);
+-moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.35);
+box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.35);
+
+
+}
+
+.button:hover {
+    background-color: green;
+    color: white;
+    transform: scale(1.1);
+    
+}
+
 /*-------- UTILITIES ---------*/
 
 .content-width {
@@ -64,15 +95,6 @@ h3 {
   }
 }
 
-/*-------- VIDEO ---------*/
-
-/* video {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 113rem;
-  } */
-
 /*-------- HEADER ---------*/
 
 header {
@@ -91,6 +113,11 @@ header .content-width {
   width: 100px;
 }
 
+nav {
+    font-size: 1.6rem;
+    color: white;
+}
+
 .main-nav ul {
   display: flex;
   align-items: center;
@@ -98,7 +125,36 @@ header .content-width {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
 }
+
+.main-nav a { 
+    color: white;
+    text-decoration: none;
+    /* padding-bottom: 8px;
+    position: relative; */
+
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* .main-nav a::after {
+    content:"";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.2s ease-in-out;
+}
+
+.main-nav a:hover::after {
+    width: 100%;
+} */
 
 .mobile-toggle {
   display: none;
@@ -249,73 +305,8 @@ text-align: center;
     position: relative;
   }
 
-  .testimonials {}
 
-/*.testimonials-content {
-  text-align: center;
-  padding: 4rem 4rem;
-  font-size: 2.4rem;
-  color: #505d68;
-}
-
-.testimonials-content p {
-  font-size: 16px;
-}
-
-.testimonials-cards {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.testimonials-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 334px;
-  max-width: 100%;
-  background-color: #f2f5f7;
-  padding: 24px;
-  margin-bottom: 2.4rem;
-}
-
-.testimonial {
-  font-size: 18px;
-}
-
-.testimonials-name {
-  margin-bottom: 0;
-  color: #505d68;
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.testimonials-job {
-  margin: 0;
-  font-size: 14px;
-}
-
-@media only screen and (min-width: 768px) {
-  .testimonials-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 2rem;
-    justify-content: center;
-  }
-
-  .testimonials-card {
-    margin: 0;
-  }
-
-  .testimonials-content {
-    text-align: left;
-    padding: 3rem 0;
-    max-width: 88%;
-  }
-}
-
+/*
 @media only screen and (min-width: 1200px) {
   .testimonials .content-width {
     display: grid;
