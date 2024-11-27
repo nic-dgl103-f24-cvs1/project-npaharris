@@ -7,34 +7,37 @@ html {
 }
 
 body {
-    font-family: "Parkinsans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
 }
 
 p {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
+  color: white;
 }
 
-h1, h2, h3 {
-    font-family: "PT Serif", serif;
+h1,
+h2,
+h3 {
+  font-family: "PT Serif", serif;
   font-weight: 700;
   font-style: normal;
+  color: white;
 }
 
 h1 {
-    font-size: 4.8rem;
+  font-size: 4.8rem;
 }
 
 h2 {
-
-font-size: 3.6rem;
+  font-size: 3.6rem;
 }
 
-h3 { 
-    font-size: 2.4rem;
+h3 {
+  font-size: 2.4rem;
 }
 /*-------- UTILITIES ---------*/
 
@@ -46,7 +49,7 @@ h3 {
 }
 
 .section-spacing {
-    padding: 8rem 0;
+  padding: 8rem 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -73,9 +76,9 @@ h3 {
 /*-------- HEADER ---------*/
 
 header {
-    position: absolute;
-    width: 100%;
-    z-index: 1;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
 header .content-width {
@@ -104,71 +107,132 @@ header .content-width {
 /*-------- HERO ---------*/
 
 .hero {
-    position: relative;
-    padding:200px 0 150px 0;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
-    
+  position: relative;
+  padding: 200px 0 150px 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
 }
 
 .hero-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .hero .content-width {
-max-width: 45rem;
+  max-width: 45rem;
 }
 
 /*-------- OFFERINGS ---------*/
 
 .offerings {
-    background-color: red;
+  background-color: rgb(56, 115, 74);
 }
 
 .offerings-content {
-    text-align: center;
-    padding-right: 4rem;
-  }
-  
-  .offerings h2 {
-    color: #505d68;
-    font-size: 3.2rem;
-    margin-top: 0;
-  }
-  
+  text-align: center;
+  padding-right: 4rem;
+}
+
+.offerings h2 {
+  font-size: 3.2rem;
+  margin-top: 0;
+}
+
+.offerings-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.offerings-card {
+  height: 233px;
+  width: 233px;
+  max-width: 100%;
+  background-color: #c2d1d9;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.offerings-card::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.3;
+}
+
+.offerings-card h3 {
+  margin: 0 0 8px 0;
+  position: relative;
+}
+
+.offerings-card p {
+  margin: 0;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 768px) {
   .offerings-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
+    flex-direction: row;
+    gap: 32px;
   }
-  
+
   .offerings-card {
-    height: 233px;
-    width: 233px;
-    max-width: 100%;
-    background-color: #c2d1d9;
-    border-radius: 8px;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .offerings {
+    padding: 8rem 0;
   }
 
+  .offerings .content-width {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .offerings-content {
+    text-align: left;
+  }
+}
+
+/*-------- TESTIMONIALS ---------*/
 
 
-  .offerings-card::before {
+
+.testimonials {
+background: url(images/chickens1.jpeg) center center no-repeat;
+background-size: cover;
+position: relative;
+text-align: center;
+}
+
+.testimonials i {
+    color: white;
+    font-size: 4.8rem;
+}
+
+.testimonials::before {
     content: "";
     display: block;
     position: absolute;
@@ -177,130 +241,86 @@ max-width: 45rem;
     left: 0;
     right: 0;
     background-color: black;
-    opacity: 0.3;
+    opacity: 0.4;
+    
   }
-  
-  .offerings-card h3 {
-    margin: 0 0 8px 0;
-    color: white;
+
+  .testimonials .content-width {
     position: relative;
-
-  }
-  
-  .offerings-card p {
-    margin: 0;
-    color: white;
-    position: relative;
-    font-size: 1.2rem;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .offerings-cards {
-      flex-direction: row;
-      gap: 32px;
-    }
-  
-    .offerings-card {
-      width: 100%;
-    }
-  }
-  
-  @media only screen and (min-width: 1200px) {
-    .offerings {
-      padding: 8rem 0;
-    }
-  
-    .offerings .content-width {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-    }
-  
-    .offerings-content {
-      text-align: left;
-    }
   }
 
-/*-------- TESTIMONIALS ---------*/
+  .testimonials {}
 
-.testimonials {
-    padding-bottom: 8rem;
-  }
-  
-  .testimonials-content {
-    text-align: center;
-    padding: 4rem 4rem;
-    font-size: 2.4rem;
-    color: #505d68;
-  }
-  
-  .testimonials-content p {
-    font-size: 16px;
-  }
-  
+/*.testimonials-content {
+  text-align: center;
+  padding: 4rem 4rem;
+  font-size: 2.4rem;
+  color: #505d68;
+}
+
+.testimonials-content p {
+  font-size: 16px;
+}
+
+.testimonials-cards {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.testimonials-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 334px;
+  max-width: 100%;
+  background-color: #f2f5f7;
+  padding: 24px;
+  margin-bottom: 2.4rem;
+}
+
+.testimonial {
+  font-size: 18px;
+}
+
+.testimonials-name {
+  margin-bottom: 0;
+  color: #505d68;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.testimonials-job {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
   .testimonials-cards {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .testimonials-card {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
     justify-content: center;
-    align-items: center;
-    height: 334px;
-    max-width: 100%;
-    background-color: #f2f5f7;
-    padding: 24px;
-    margin-bottom: 2.4rem;
   }
-  
-  .testimonial {
-    font-size: 18px;
-  }
-  
-  .testimonials-name {
-    margin-bottom: 0;
-    color: #505d68;
-    font-size: 16px;
-    font-weight: normal;
-  }
-  
-  .testimonials-job {
+
+  .testimonials-card {
     margin: 0;
-    font-size: 14px;
   }
-  
-  @media only screen and (min-width: 768px) {
-    .testimonials-cards {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      gap: 2rem;
-      justify-content: center;
-    }
-  
-    .testimonials-card {
-      margin: 0;
-    }
-  
-    .testimonials-content {
-      text-align: left;
-      padding: 3rem 0;
-      max-width: 88%;
-    }
+
+  .testimonials-content {
+    text-align: left;
+    padding: 3rem 0;
+    max-width: 88%;
   }
-  
-  @media only screen and (min-width: 1200px) {
-    .testimonials .content-width {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-    }
+}
+
+@media only screen and (min-width: 1200px) {
+  .testimonials .content-width {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   }
+} */
 
 /*-------- LOCATION / CONTACT ---------*/
-
-
-
-
-  
