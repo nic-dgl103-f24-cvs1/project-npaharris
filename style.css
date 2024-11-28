@@ -95,7 +95,9 @@ box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.35);
   }
 }
 
-/*-------- HEADER ---------*/
+
+
+/*-------- P.1 HEADER ---------*/
 
 header {
   position: absolute;
@@ -316,13 +318,25 @@ text-align: center;
 
 /*-------- LOCATION / CONTACT ---------*/
 
+.hours {
+    width: 30%;
+    justify-content: center ;
+    align-items: center ;
+    font-size: 2.4rem;
+  color: rgb(236, 228, 174);
+}
+
+.hours h2 {}
+
 .location {
+    display: flex;
+    justify-content: flex-end;
     padding: 2.4rem;
     background-color: #4c6756;
 }
 
 .location iframe {
-    width: 100%;
+    width: 70%;
     height: 40rem;
 }
 
@@ -362,7 +376,33 @@ text-align: center;
     padding: 1.6rem;
 }
 
+.footer-nav {
+    font-size: 1.6rem;
+    color: white;
+}
 
+.footer-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer-nav a { 
+    color: white;
+    text-decoration: none;
+    /* padding-bottom: 8px;
+    position: relative; */
+
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
 
 
 /*-------- DISCLAIMER ---------*/
@@ -370,3 +410,7 @@ text-align: center;
 .disclaimer {
     text-align: center;
 }
+
+/*-------- P.2 ---------*/
+
+
