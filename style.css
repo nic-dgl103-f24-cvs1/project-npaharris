@@ -28,7 +28,7 @@ h5 {
   font-weight: 700;
   font-style: normal;
   color: white;
-  /* margin: 0 0 16px 0; */
+  margin: 0 0 16px 0;
 }
 
 h1 {
@@ -437,12 +437,16 @@ footer h2 {
 /*-------- PRODUCTS ---------*/
 
 .products {
-  background-color: red;
+  background-color: #4c6756;
+  
 }
 
 .product {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 2fr 2fr;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 0;
 }
 
 .products .content-width {
@@ -450,3 +454,42 @@ footer h2 {
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
+
+.product-content p {
+    max-width: 80%;
+    
+}
+
+.product h3 h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.product-image {
+    height: auto;
+    width: 233px;
+    max-width: 100%;
+    background-color: #c2d1d9;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  
+  /* .product-image::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.3;
+  } */
