@@ -59,7 +59,7 @@
           simply producing food.
         </p>
         <!-- <p>
-          Kehler Vegetable Company is a vibrant family-owned farm nestled in the
+          Kehler Vegetable Company is a viant family-owned farm nestled in the
           heart of the Comox Valley. Spanning 20 acres of fertile land, we
           cultivate a diverse array of fresh, seasonal vegetables, luscious
           berries, and farm-fresh eggs from our free-range pasture. Our passion
@@ -78,17 +78,41 @@
       </div>
     </section>
 
-    <section class="faq">
-      <div class="content-width section-spacing">
-        <div class="faq-content">
-          <p>
-            <strong>Join over 34,000+ UX Designers,</strong> consectetur
-            adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliquat enim ad.
-          </p>
+    <section class="form section-spacing bg-green">
+      <div class="content-width">
+        <div class="form-content">
+          <h2>Contact us</h2>
+
+          <form>
+            <div class="form-field">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" />
+            </div>
+            <div class="form-field">
+              <label for="email">Email:</label>
+              <input type="text" id="email" name="email" />
+            </div>
+            <div class="form-field">
+              <label for="subject">Subject:</label>
+              <select name="subject" id="subject">
+                <option>General Inquiry</option>
+                <option>Job Opportunities</option>
+                <option>Special Orders</option>
+                <option>Bulk Orders</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="content">Content:</label>
+              <textarea name="content" id="content" rows="4"> </textarea>
+            </div>
+            <input class="button" type="submit" value="Submit" />
+          </form>
         </div>
-        <a class="call-to-action-button">subscribe</a>
       </div>
+    </section>
+
+    <section class="our-staff section-spacing bg-green">
+      <div class="content-width"></div>
     </section>
   </body>
 </html>
