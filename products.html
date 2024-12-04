@@ -23,32 +23,28 @@
   <body>
     <header>
       <div class="content-width">
-        <img
-          class="header-logo"
-          src="images/kehler-logo.png"
-          alt="Kehler Farms Logo"
-        />
-        <nav class="main-nav">
+        <a href="index.html">
+        <img class="header-logo" src="images/kehler-logo.png" alt="Kehler Farms Logo" /></a>
+        <nav id="main-nav">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
+          <button class="mobile-toggle" onclick="showNav()">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
         </nav>
+        <button class="mobile-toggle" onclick="showNav()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
       </div>
 
-
-      <!-- Make good hamburger menu for mobile -->
-
-      <button class="mobile-toggle" onclick="showNav()">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </button>
     </header>
 
 <main>
 
-    <section class="hero dark-background section-spacing">
+    <section class="hero dark-background ">
         <video class="hero-video" src="tomato-video.mp4" title="Tomato Picking" preload="metadata" autoplay muted loop></video>
         <div class="content-width section-spacing">
 
@@ -177,7 +173,12 @@
 
 </main>
 
-
+<script>
+  function showNav() {
+    var element = document.getElementById("main-nav");
+    element.classList.toggle("show");
+  }
+</script>
 
 
 

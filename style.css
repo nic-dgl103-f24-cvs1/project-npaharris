@@ -82,7 +82,7 @@ h5 {
   background-color: white;
   border: none;
   border-radius: 8px;
-  color: green;
+  color: #4c6756;
   padding: 16px 16px;
   margin-top: 8px;
   text-align: center;
@@ -103,7 +103,7 @@ h5 {
 }
 
 .button:hover {
-  background-color: green;
+  background-color: #4c6756;
   color: white;
   transform: scale(1.1);
 }
@@ -118,11 +118,13 @@ img {
   width: 33.4rem;
   max-width: 100%;
   margin: auto;
-  padding: 0 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .section-spacing {
-  padding: 4rem 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .bg-green {
@@ -135,30 +137,80 @@ img {
   }
 
   .section-spacing {
-    padding: 8rem 0;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 }
 
 /*-------- PAGE 1 ---------*/
 
 header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.header-logo {
+  width: 40px;
+}
+
+.mobile-toggle {
   display: none;
 }
 
-@media only screen and (min-width: 1200px) {
-  header {
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-    display: block;
-  }
+header .content-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  header .content-width {
+@media only screen and (max-width: 1199px) {
+  #main-nav {
+    display: none;
+  }
+  #main-nav.show {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    position: fixed;
+    background-color: #4c6756;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
   }
 
+  #main-nav .mobile-toggle {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+  }
+  .mobile-toggle {
+    display: block;
+    color: white;
+    font-size: 24px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  #main-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+  }
+  #main-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
   .header-logo {
     width: 100px;
   }
@@ -168,7 +220,7 @@ header {
     color: white;
   }
 
-  .main-nav ul {
+  #main-nav ul {
     display: flex;
     align-items: center;
     gap: 24px;
@@ -178,14 +230,12 @@ header {
     text-decoration: none;
   }
 
-  .main-nav a {
+  #main-nav a {
     color: white;
     text-decoration: none;
-    /* padding-bottom: 8px;
-    position: relative; */
   }
 
-  .main-nav a:hover {
+  #main-nav a:hover {
     text-decoration: underline;
   }
 
@@ -198,7 +248,7 @@ header {
 
 .home-hero {
   position: relative;
-  padding: 50px 0;
+  padding: 80px 0 50px 0;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
@@ -215,7 +265,7 @@ header {
 }
 
 .home-hero .content-width {
-  max-width: 45rem;
+  width: 45rem;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -344,14 +394,6 @@ header {
   position: relative;
 }
 
-/*
-@media only screen and (min-width: 1200px) {
-  .testimonials .content-width {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-} */
-
 /*-------- LOCATION / CONTACT ---------*/
 
 .hours {
@@ -475,8 +517,7 @@ footer h2 {
 
 .hero {
   position: relative;
-
-  padding: 50px 0 75px 0;
+  padding: 80px 0 50px 0;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
@@ -491,6 +532,14 @@ footer h2 {
   top: 0;
   z-index: -1;
 }
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0 150px 0;
+  }
+}
+
+
 
 /*-------- PRODUCTS ---------*/
 
@@ -559,7 +608,6 @@ footer h2 {
 
 /*-------- FORM ---------*/
 
-
 .form .content-width {
   width: 40rem;
   padding-left: 16px;
@@ -579,13 +627,12 @@ footer h2 {
 }
 
 .form-field select {
-  padding: 4px ;
+  padding: 4px;
 }
 
 .form-field textarea {
-  padding: 4px ;
+  padding: 4px;
   resize: none;
-
 }
 
 .form-field {
@@ -601,4 +648,31 @@ footer h2 {
 
 /*-------- TABLE ---------*/
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
 
+th,
+td {
+  /* border: 1px solid #cecfd5; */
+  padding: 10px 15px;
+}
+
+thead {
+  background: #4c6756;
+}
+
+.our-staff {
+  padding-top: 0;
+}
+
+.our-staff .content-width {
+  width: 40rem;
+  padding-left: 16px;
+  padding-right: 16px;
+}

@@ -23,19 +23,25 @@
   <body>
     <header>
       <div class="content-width">
-        <img
-          class="header-logo"
-          src="images/kehler-logo.png"
-          alt="Kehler Farms Logo"
-        />
-        <nav class="main-nav">
+        <a href="index.html">
+          <img
+            class="header-logo"
+            src="images/kehler-logo.png"
+            alt="Kehler Farms Logo"
+        /></a>
+        <nav id="main-nav">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
+          <button class="mobile-toggle" onclick="showNav()">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
         </nav>
+        <button class="mobile-toggle" onclick="showNav()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
       </div>
     </header>
 
@@ -112,7 +118,71 @@
     </section>
 
     <section class="our-staff section-spacing bg-green">
-      <div class="content-width"></div>
+      <div class="content-width">
+        <h2>Our Staff</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Position</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nigel</td>
+              <td>Developer</td>
+            </tr>
+            <tr>
+              <td>Jimbo</td>
+              <td>Farmer</td>
+            </tr>
+            <tr>
+              <td>Bobby</td>
+              <td>Strawberry Specialist</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
+
+    <footer class="footer section-spacing">
+      <div class="content-width">
+        <div class="footer-content">
+          <h2>Ready to join the community?</h2>
+          <section class="social-media">
+            <a
+              href="https://www.facebook.com/kehlervegetables/"
+              target="_blank"
+            >
+              <i class="fa fa-facebook-official" aria-hidden="true"></i
+            ></a>
+
+            <a
+              href="https://www.instagram.com/kehlervegetables/"
+              target="_blank"
+            >
+              <i class="fa fa-instagram" aria-hidden="true"></i
+            ></a>
+          </section>
+
+          <section class="footer-nav">
+            <nav>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function showNav() {
+        var element = document.getElementById("main-nav");
+        element.classList.toggle("show");
+      }
+    </script>
   </body>
 </html>
