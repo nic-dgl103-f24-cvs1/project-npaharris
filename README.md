@@ -54,19 +54,30 @@ I am redesigning the Kehler Vegetable Company website to make it simple, user-fr
 
 # Featured Products
 
-- Popular products
-- Quick view options
+- Seasonal / featured products
 - Pricing display
+
+# Location / Hours
+
+- Hours on leftside
+- Directions
+- Interactive map
 
 # Footer
 
-- Newsletter signup
-- Social proof
 - Location
+- Newsletter signup?
+- Social media buttons
+- Footer navigation
 
 ## Second page - Products
 
 # Header
+
+- Logo
+- Farm stand name
+- Main navigation menu
+- Mobile hamburger menu
 
 # Product List
 
@@ -77,31 +88,42 @@ I am redesigning the Kehler Vegetable Company website to make it simple, user-fr
 # Seasonal Items
 
 - Featured items carousel
-- Special pricing
-- Time-limited offers
+- Pricing
+- Time-limited offers?
 
 # Footer
+
+- Quick call to action
+- Social media icons
+- Footer navigation
 
 ## Third Page - Contact/Visit Us
 
 # Header
 
-# Location
+- Logo
+- Main navigation menu
+- Mobile hamburger menu
+
+# Call-to-action / Hero
+
+- Video background
+- Overlay text
+- Couple of navigation buttons
+
+# Contact Us
 
 - Interactive map
 - Written directions
-- Parking information
+- Parking information?
+- Form
 
-# Schedule
+# Employee List
 
-- Weekly schedule
-- Holiday notifications
-- Special hours
-
-# Social Media
-
-- Social icons
-- Feed integration
-- Follow buttons
+- Web Table / Form
 
 # Footer
+
+- Quick call to action
+- Social media icons
+- Footer navigation

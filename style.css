@@ -8,7 +8,6 @@ html {
 
 body {
   font-family: "Parkinsans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   margin: 0;
@@ -71,7 +70,6 @@ h5 {
   -moz-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.35);
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.35);
   font-family: "Parkinsans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
@@ -127,8 +125,6 @@ header .content-width {
   justify-content: space-between;
 }
 
-
-
 /*-------- HERO ---------*/
 
 .home-hero {
@@ -152,8 +148,6 @@ header .content-width {
 .home-hero .content-width {
   width: 45rem;
 }
-
-
 
 /*-------- OFFERINGS ---------*/
 
@@ -217,8 +211,6 @@ header .content-width {
   font-size: 1.2rem;
 }
 
-
-
 /*-------- TESTIMONIALS ---------*/
 
 .testimonials {
@@ -272,8 +264,6 @@ header .content-width {
 .location iframe {
   height: 30rem;
 }
-
-
 
 /*-------- FOOTER ---------*/
 
@@ -338,8 +328,6 @@ footer h2 {
   text-decoration: underline;
 }
 
-
-
 /*-------- DISCLAIMER ---------*/
 
 .disclaimer {
@@ -366,12 +354,6 @@ footer h2 {
   top: 0;
   z-index: -1;
 }
-
-
-
-
-
-
 
 /*-------- PRODUCTS ---------*/
 
@@ -417,8 +399,6 @@ footer h2 {
   object-fit: cover;
 }
 
-
-
 /*-------- PAGE 3 ---------*/
 
 /*-------- FORM ---------*/
@@ -436,7 +416,6 @@ footer h2 {
   padding: 4px 8px;
   border-radius: 4px;
   font-family: "Parkinsans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
