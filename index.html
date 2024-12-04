@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kehler Farms</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Parkinsans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!-- Header MUST USE CSS TRANSITIONS?!-->
+
+  <body>
+    <header>
+      <div class="content-width">
+        <a href="index.html">
+          <img
+            class="header-logo"
+            src="images/kehler-logo.png"
+            alt="Kehler Farms Logo"
+        /></a>
+        <nav id="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <button class="mobile-toggle" onclick="showNav()">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+        </nav>
+        <button class="mobile-toggle" onclick="showNav()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+
+      <section class="home-hero dark-background">
+        <video
+          class="home-hero-video"
+          src="tomato-garden.mp4"
+          title="Tomato Garden"
+          preload="metadata"
+          autoplay
+          muted
+          loop
+        ></video>
+        <div class="content-width">
+          <!-- background video with overlay text, maybe transition buttons (transition-timing-function)? and then 2nd and 3rd header do image-->
+
+          <h1>Fresh Produce, Every Morning.</h1>
+          <p>
+            Located in the heart of Black Creek, our small family farm is
+            growing great things for our local community. You will find the
+            freshest produce, berries and animal products from our pasture in
+            our farmstand seasonally each year.
+          </p>
+          <p>
+            The farmstand runs on the honour system and is stocked up daily
+            right at the farm gate!
+          </p>
+
+          <a class="button" href="products.html">Products</a>
+          <a class="button" href="contact.html">Contact</a>
+        </div>
+      </section>
+
+      <!-- Product Offerings -->
+
+      <section class="offerings section-spacing">
+        <div class="content-width">
+          <div class="offerings-content">
+            <h2>Featured Goods</h2>
+            <p>
+              Our carefully curated selection celebrates the best of local,
+              seasonal produce. Each item is lovingly grown, hand-picked, and
+              delivered with the same care and passion that our family has
+              cultivated for generations. From sun-kissed fruits to farm-fresh
+              eggs, we bring you nature's finest, packed with flavor and
+              nutrition.
+            </p>
+            <a class="button" href="products.html">Prices</a>
+          </div>
+          <div class="offerings-cards">
+            <div
+              class="offerings-card"
+              style="background-image: url(images/eggs2.jpeg)"
+            >
+              <h3>Eggs</h3>
+              <p>
+                Farm-fresh eggs from free-range hens, bursting with golden yolks
+                and natural flavor.
+              </p>
+            </div>
+            <div
+              class="offerings-card"
+              style="background-image: url(images/strawberries1.jpeg)"
+            >
+              <h3>Strawberries</h3>
+              <p>
+                Sun-ripened, hand-picked strawberries – sweet, juicy, and
+                bursting with summer flavor.
+              </p>
+            </div>
+            <div
+              class="offerings-card"
+              style="background-image: url(images/tomatoes.jpeg)"
+            >
+              <h3>Tomatoes</h3>
+              <p>
+                Vine-ripened tomatoes, grown with care and picked at peak
+                perfection for maximum taste.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+
+      <section class="testimonials">
+        <div class="content-width section-spacing">
+          <div class="testimonials-content">
+            <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+            <h2>N. Harris</h2>
+            <p>
+              "Kehler’s veggies are always fresh, vibrant, and full of flavor.
+              Their farm stand has become my go-to spot for weekly produce—local
+              quality I can trust!"
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Map, Contact and Hours -->
+
+    <section class="location">
+      <section class="hours">
+        <h3>
+          Our little farmstand is located right at the farm gate, it is run on
+          the honour system with a small amount of change available.
+        </h3>
+        <ul>
+          <li>Wed - Fri 10-5pm</li>
+          <li>Sat 9-12pm</li>
+        </ul>
+      </section>
+      <div class="location-content"></div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.9548666499545!2d-125.12793902250364!3d49.82451347147941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881ba521f0dd49%3A0xb8c066fbd0190296!2sKehler%20Vegetable%20Company!5e0!3m2!1sen!2sca!4v1732592020937!5m2!1sen!2sca"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <!-- Footer -->
+
+    <!-- <h2>Find us here!</h2>
+        <p>#8083 <br> Black Creek, BC V9J 1G9</p>
+        <p><a href="https://www.kehlervegetables.ca">kehlervegetables.ca</a> <br> (250) 202-3236</p> -->
+
+    <footer class="footer">
+      <div class="content-width section-spacing">
+        <div class="footer-content">
+          <h2>Ready to join the community?</h2>
+          <section class="social-media">
+            <a
+              href="https://www.facebook.com/kehlervegetables/"
+              target="_blank"
+            >
+              <i class="fa fa-facebook-official" aria-hidden="true"></i
+            ></a>
+
+            <a
+              href="https://www.instagram.com/kehlervegetables/"
+              target="_blank"
+            >
+              <i class="fa fa-instagram" aria-hidden="true"></i
+            ></a>
+          </section>
+
+          <section class="footer-nav">
+            <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Disclaimer -->
+
+    <section class="disclaimer">
+      DISCLAIMER This is a fictional website that was designed and coded as an
+      educational exercise. It is not intended to be seen outside of the class
+      environment. None of the content and images were approved by the business
+      owner.
+    </section>
+
+    <script>
+      function showNav() {
+        var element = document.getElementById("main-nav");
+        element.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
